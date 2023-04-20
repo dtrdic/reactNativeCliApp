@@ -1,4 +1,16 @@
 {
-  "name": "AwesomeProject",
-  "displayName": "AwesomeProject"
+  "expo": {
+    "name": "reactNativeSample",
+    "slug": "reactNativeSample",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "bundleIdentifier": "io.codemagic.dtrdic4"
+    },
+    "android": {
+      "package": "io.codemagic.dtrdic4"
+    }
+  }
 }
