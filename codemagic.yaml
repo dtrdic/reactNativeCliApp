@@ -26,7 +26,7 @@ workflows:
               mv ./support-files/build.gradle android/app     
           - name: Build Android release
             script: |
-              LATEST_GOOGLE_PLAY_BUILD_NUMBER=$(google-play get-latest-build-number --package-name 'io.codemagic.dtrdic4')
+              LATEST_GOOGLE_PLAY_BUILD_NUMBER=$(google-play get-latest-build-number --package-name "$PACKAGE_NAME")
               if [ -z LATEST_BUILD_NUMBER ]; then
                   UPDATED_BUILD_NUMBER=$BUILD_NUMBER
               else
