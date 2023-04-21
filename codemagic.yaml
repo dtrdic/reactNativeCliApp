@@ -11,12 +11,10 @@ workflows:
           vars:
             PACKAGE_NAME: "io.codemagic.dtrdic4"
         scripts:
-        - name: Install npm dependencies
-          script: | 
-            npm install
-        - name: Install Expo CLI and eject
-          script: | 
-            npm install -g expo-cli
+        - name: Install dependencies and Expo CLI, and eject app
+          script: |
+            yarn install
+            yarn global add expo-cli
             expo eject
         - name: Set up app/build.gradle
           script: |
