@@ -127,7 +127,7 @@ android {
         applicationId 'io.codemagic.dtrdic4'
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
-        versionCode getMyVersionCode()
+        versionCode "1.0.0"
         versionName getMyVersionName()
     }
 
