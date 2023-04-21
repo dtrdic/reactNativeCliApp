@@ -117,12 +117,14 @@ def getMyVersionName = { ->
     return project.hasProperty('versionName') ? versionName : "1.0"
 }
 
-android {s
+android {
     ndkVersion rootProject.ext.ndkVersion
 
     compileSdkVersion rootProject.ext.compileSdkVersion
     def latestGooglePlayBuildNumber = Integer.valueOf(System.env.LATEST_GOOGLE_PLAY_BUILD_NUMBER ?: System.env.BUILD_NUMBER ?: 0)
 
+
+    namespace "io.codemagic.dtrdic4"
     defaultConfig {
         applicationId 'io.codemagic.dtrdic4'
         minSdkVersion rootProject.ext.minSdkVersion
