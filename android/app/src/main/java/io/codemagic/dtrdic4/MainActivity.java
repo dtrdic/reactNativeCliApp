@@ -1,4 +1,4 @@
-package com.awesomeproject;
+package io.codemagic.dtrdic4;
 
 import com.facebook.react.ReactActivity;
 import com.facebook.react.ReactActivityDelegate;
