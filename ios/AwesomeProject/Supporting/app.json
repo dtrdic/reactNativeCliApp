@@ -1,0 +1,19 @@
+{
+  "expo": {
+    "name": "package.json",
+    "slug": "package.json",
+    "version": "1.0.0",
+    "description": "asd",
+    "sdkVersion": "48.0.0",
+    "platforms": [
+      "ios",
+      "android"
+    ],
+    "android": {
+      "package": "io.codemagic.dtrdic4"
+    },
+    "ios": {
+      "bundleIdentifier": "io.codemagic.dtrdic4"
+    }
+  }
+}
